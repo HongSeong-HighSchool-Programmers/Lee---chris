@@ -1,0 +1,111 @@
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        미분의_정의.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Hide()
+        도함수.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Hide()
+        미분법.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        초월함수.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        지수함수.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Hide()
+        로그함수.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        예제.Show()
+    End Sub
+
+End Class
+
+Public Class 도함수
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+End Class
+
+Public Class 로그함수
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+End Class
+
+Public Class 미분법
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+    
+End Class
+
+Public Class 미분의 정의
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+End Class
+
+Public Class 지수함수
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+End Class
+
+Public Class 초월함수
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+End Class
+
+Public Class 예제
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim score As Integer
+        score = 0
+        If 문제1번.Text = "2x + 1" Then
+            score = score + 1
+        End If
+
+        If 문제2번.Text = "7" Then
+            score = score + 1
+        End If
+
+        If 문제3번.Text = "e^x * 3^x * ln(3) + e^x * 3^x" Or 문제3번.Text = "e^x * 3^x + e^x * 3^x * ln(3)" Then
+            score = score + 1
+        End If
+
+        If score = 3 Then
+            히든.Show()
+        Else
+            노말.Show()
+        End If
+        Me.Hide()
+    End Sub
+
+End Class
